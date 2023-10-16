@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sqlcoder</title>
+    <link href="{{ url_for('static', path='css/sql_css.css') }}" rel="stylesheet"> 
+    <script src="{{ url_for('static', path='js/sql_js.js') }}" > </script>
+    <script src="{{ url_for('static', path='js/jquery-3.7.1.min.js') }}" > </script>
+    
+</head>
+<body>
+<div class = "main">
+    <div class = "main_frame">
+        <div class = "conversation_head">
+            <div class = "head_text">head</div>
+        </div>
+        <div class = "conversation_body" id = "conversation_body">
+            <div class = "body_text">body</div>
+        </div>
+        <div class = "conversation_footer" >
+            <div class = "input_div">
+                <form onsubmit="question_submit(event); " class = "input_form">
+                    <input type="text" name="question" class = "question_input">
+                    
+                    <button type = "submit" class = "question_submit_button"  >
+                        <span> generate </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

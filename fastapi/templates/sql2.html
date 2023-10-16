@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="chat-tab" class="tabitem  svelte-19hvt5v" style="display: block;">
+        <div id="" class="svelte-vt1mxs gap" style="min-width: min(0px, 100%); align-items: center;">
+            <div id="component-33" class="svelte-15lo0d8 stretch">
+                <div id="chat-col" class="svelte-vt1mxs gap" style="flex-grow: 1; min-width: min(320px, 100%);">
+                    <div id="component-35"
+                        class="block svelte-90oupt padded hide-container pretty_scrollbar chat-parent"
+                        style="border-style: solid; overflow: visible; min-width: min(0px, 100%); border-width: var(--block-border-width);">
+                        <div class="wrap center full svelte-119qaqt hide" style="position: absolute; padding: 0px;">
+                        </div>
+                        <div class="svelte-1ed2p3z">
+                            <div class="prose svelte-1ybaih5" id="component-35">
+                                <style>
+                                    .message {
+                                        display: grid;
+                                        grid-template-columns: 60px minmax(0, 1fr);
+                                        padding-bottom: 25px;
+                                        font-size: 15px;
+                                        font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+                                        line-height: 23px !important;
+                                    }
+
+                                    .circle-you {
+                                        width: 50px;
+                                        height: 50px;
+                                        background-color: rgb(238, 78, 59);
+                                        border-radius: 50%;
+                                    }
+
+                                    .circle-bot {
+                                        width: 500px;
+                                        height: 500px;
+                                        background-color: rgb(59, 78, 244);
+                                        border-radius: 50%;
+                                    }
+
+                                    .circle-bot img,
+                                    .circle-you img {
+                                        border-radius: 50%;
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+
+                                    .text p {
+                                        margin-top: 5px;
+                                    }
+
+                                    .username {
+                                        font-weight: bold;
+                                    }
+
+                                    .message-body img {
+                                        max-width: 300px;
+                                        max-height: 300px;
+                                        border-radius: 20px;
+                                    }
+
+                                    .message-body p {
+                                        margin-bottom: 0 !important;
+                                        font-size: 15px !important;
+                                        line-height: 23px !important;
+                                    }
+
+                                    .dark .message-body p em {
+                                        color: rgb(138, 138, 138) !important;
+                                    }
+
+                                    .message-body p em {
+                                        color: rgb(110, 110, 110) !important;
+                                        font-weight: 500;
+                                    }
+                                </style>
+                                <div class="chat" id="chat">
+                                    <div class="messages">
+                                        <div class="message">
+                                            <div class="circle-bot">
+
+                                            </div>
+                                            <div class="text">
+                                                <div class="username">
+                                                    AI
+                                                </div>
+                                                <div class="message-body">
+                                                    <p>How can I help you today?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chat-input-row" class="svelte-15lo0d8 stretch" style="position: absolute; bottom: 0px;">
+                        
+                        
+                        <div id="chat-input-container" class="svelte-vt1mxs gap"
+                            style="flex-grow: 10; min-width: min(320px, 100%);">
+                            <div class="form svelte-sfqy0y" style="flex-grow: 0; min-width: min(0px, 100%);">
+                                <div id="chat-input" class="block add_scrollbar svelte-90oupt padded"
+                                    style="border-style: solid; overflow: hidden; min-width: min(160px, 100%); border-width: var(--block-border-width);">
+                                    <div class="wrap default false svelte-119qaqt hide"
+                                        style="position: absolute; padding: 0px;"></div> <label
+                                        class="svelte-1f354aw container"><span data-testid="block-info"
+                                            class="svelte-1gfkn6j"></span> <textarea data-testid="textbox"
+                                            class="svelte-1f354aw pretty_scrollbar" dir="ltr"
+                                            placeholder="Send a message" rows="1"
+                                            style="overflow-y: scroll; height: 42px; resize: none;"></textarea></label>
+                                </div>
+                                <div id="typing-container" class="block svelte-90oupt padded hide-container"
+                                    style="border-style: solid; overflow: visible; min-width: min(0px, 100%); border-width: var(--block-border-width);">
+                                    <div class="wrap center full svelte-119qaqt hide"
+                                        style="position: absolute; padding: 0px;"></div>
+                                    <div class="svelte-1ed2p3z">
+                                        <div class="prose  svelte-1ybaih5" id="typing-container">
+                                            <div class="typing"><span></span><span class="dot1"></span><span
+                                                    class="dot2"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="generate-stop-container" class="svelte-vt1mxs gap"
+                            style="flex-grow: 1; min-width: min(320px, 100%);">
+                            <div id="component-45" class="svelte-15lo0d8 stretch"><button
+                                    class="lg secondary svelte-cmf5ev hidden" id="stop" style="display: none;">
+                                    Stop</button><button class="lg primary  svelte-cmf5ev" id="Generate"
+                                    style="display: flex;"> Generate</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- <div id = "chat-tab" class = "tabitem" style="display:block;">
+    <div >
+        
+    </div>
+    <input type="text" name="question"><br>
+</div> -->
+    <!-- {% if rsCity %}
+        {% for city in rsCity %}
+            <div>
+                {{city.name}} - {{city.timezone}}
+            </div>
+        {% endfor %}
+    {% else %}
+            <div>
+                No city...
+            </div>
+    {% endif %} -->
+</body>
+
+</html>
